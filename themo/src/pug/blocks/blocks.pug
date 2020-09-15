@@ -1,0 +1,23 @@
+mixin header__nav-link(name)
+    li.header__nav-item
+        a.header__nav-link(href="")= name
+
+mixin about__card(img, title, subtitle)
+    .about__card
+        .about__card-content
+            .about__card-image
+                img(src= img, alt="")
+            .about__card-title(class="title")= title
+            .about__card-subtitle(class="subtitle")= subtitle
+
+mixin decoration()
+    .line-decoration(class="line-decoration--1")
+    .line-decoration(class="line-decoration--2")
+    .line-decoration(class="line-decoration--3")
+    .line-decoration(class="line-decoration--4")
+    .text-decoration 
+                        
+mixin projects__card(img)
+    .projects__card
+        img.projects__card-image(src= img, alt="")
+        

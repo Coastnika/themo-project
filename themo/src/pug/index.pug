@@ -1,0 +1,125 @@
+
+include blocks/blocks.pug
+
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        title Document
+        link(rel="stylesheet", href="build/css/style.css")
+        link(rel="stylesheet", href="https://unpkg.com/swiper/css/swiper.min.css")
+    body
+        .header
+            .scene(id="scene")
+                .scene__layer(class="scene__layer--1" data-depth="0.3")
+                    img(src="src/img/scene-layer--1.png")
+            .header__container
+                .header__nav
+                    ul.header__nav-list
+                        +header__nav-link('Home Page')
+                        +header__nav-link('About Us')
+                        +header__nav-link('Our Projects')
+                        +header__nav-link('Testimonials')
+                        +header__nav-link('Contacts')
+                        +header__nav-link('Demos')
+                .header__main
+                    .header__content
+                        .header__content-title Themo, We Up Your Profit
+                        .header__content-subtitle Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in 
+                        .header__content-button 
+                            button(class="btn") Buy themo now
+                    .header__social
+                        a.header__social-button(href="") fb
+                            img(src="", alt="")
+                        a.header__social-button(href="") inst
+                            img(src="", alt="")
+                        a.header__social-button(href="") vk
+                            img(src="", alt="")
+           
+        
+        .about
+            .about__container
+                .about__title(class="title") About Us
+                .about__subtitle(class="subtitle") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur 
+                .about__wrapper
+                    +about__card("src/img/design-icon.png", "Design", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam")
+                    +about__card("src/img/analysis-icon.png", "Analysis", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam")
+                    +about__card("src/img/finalization-icon.png", "Finalization", "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam")
+          
+            
+        .projects
+            .projects__container
+                .projects__title(class="title") Our Projects
+                .projects__subtitle(class="subtitle") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .projects__wrapper
+                    +projects__card("src/img/projects__card-image--1.jpg")
+                    +projects__card("src/img/projects__card-image--2.jpg")
+                    +projects__card("src/img/projects__card-image--3.jpg")
+                    +projects__card("src/img/projects__card-image--4.jpg")
+                .projects__wrapper
+                    +projects__card("src/img/projects__card-image--5.jpg")
+                    +projects__card("src/img/projects__card-image--6.jpg")
+                    +projects__card("src/img/projects__card-image--7.jpg")
+                    +projects__card("src/img/projects__card-image--8.jpg")
+        
+        .testimonials
+            .testimonials__container
+                .testimonials__title(class="title") Testimonials
+                .testimonials__swiper(class="swiper-container")
+                    .testimonials__wrapper(class="swiper-wrapper")
+                        .testimonials__slide(class="swiper-slide")
+                            .testimonials__slide-name Adams Holins
+                            .testimonials__slide-position director of buttons
+                            .testimonials__slide-image
+                                img(src="src/img/swiper-image--1.png", alt="")
+                            .testimonials__slide-text(class="subtitle") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        .testimonials__slide(class="swiper-slide")
+                            .testimonials__slide-name Adams Holins
+                            .testimonials__slide-position director of buttons
+                            .testimonials__slide-image
+                                img(src="src/img/swiper-image--1.png", alt="")
+                            .testimonials__slide-text(class="subtitle") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        .testimonials__slide(class="swiper-slide")
+                            .testimonials__slide-name Adams Holins
+                            .testimonials__slide-position director of buttons
+                            .testimonials__slide-image
+                                img(src="src/img/swiper-image--1.png", alt="")
+                            .testimonials__slide-text(class="subtitle") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        .testimonials__slide(class="swiper-slide")
+                            .testimonials__slide-name Adams Holins
+                            .testimonials__slide-position director of buttons
+                            .testimonials__slide-image
+                                img(src="src/img/swiper-image--1.png", alt="")
+                            .testimonials__slide-text(class="subtitle") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    .testimonials__swiper-pagination(class="swiper-pagination")
+
+
+        .contact
+            .contact__container
+                .contact__title(class="title") Contact
+                .contact__subtitle(class="subtitle") Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                form.contact__form(action="#")
+                    .contact__wrapper
+                        .contact__input
+                            input.input(type="text" placeholder="Firs Name")
+                        .contact__input
+                            input.input(type="text" placeholder="Last Name")
+                        .contact__input
+                            input.input(type="text" placeholder="E-mail")
+                    .contact__wrapper
+                        .contact__textarea
+                            textarea(class="textarea" name="", cols="30", rows="10" placeholder="Enter your question")
+                        .contact__button
+                            button.btn(class="btn-contact") Buy themo now
+           
+        script(src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js")
+        script(src="src/js/parallax-init.js")
+        script(src="https://unpkg.com/swiper/js/swiper.min.js")
+        script(src="src/js/swiper-init.js")
+        
+        
+
+            
+                    
